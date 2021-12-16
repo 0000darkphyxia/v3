@@ -1,0 +1,26 @@
+<!--<h1 class="title_ranking_100">{SITE_DESCRIPTION} </h1>-->
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="600">
+	<param name="movie" value="{SITE_CMS_ROOT}/gamefiles/character5.swf" />
+    <param name="quality" value="high" />
+    <param name="flashvars" value="{SITE_PROFILE_ADDON}" />          
+    <embed src="{SITE_CMS_ROOT}gamefiles/character5.swf" width="835px" height="510px" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" flashvars="{SITE_PROFILE_ADDON}"></embed>
+</object>
+</center>
+<h1 class="title_ranking_100">Achievements</h1>
+<script>
+$(document).ready(function() {
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+});
+</script>
+{SITE_PROFILE_ACHIEVEMENTS}
+<h1 class="title_ranking_100">Inventory</h1>
+{SITE_PROFILE_INVENTORY}
+

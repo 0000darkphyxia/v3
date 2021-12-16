@@ -1,0 +1,70 @@
+<!-- ============== LADDER SECTION =============== -->
+<div class="row pattern">
+	<section class="features" id="features">
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="nav active"><a href="#topRanking" data-toggle="tab">Weekly Ranking</a></li>
+				<li class="nav"><a href="#pkRanking" data-toggle="tab">Player Kill Ranking</a></li>
+				<li class="nav"><a href="#guildRanking" data-toggle="tab">Guild Ranking</a></li>
+			</ul>
+			<div class="tab-content">
+				<!-- ============== TOP 100 SECTION =============== -->
+				<div class="tab-pane fade in active table-responsive" id="topRanking">
+					<table class="table">
+						<thead class="thead">
+							<tr>
+								<th style="width:5px;">#</th>
+								<th>Character Name</th>
+								<th>Guild Name</th>
+								<th>Level</th>
+								<th style="width:50px;">Kills</th>
+								<th style="width:50px;">Deaths</th>
+								<th style="width:50px;">Points</th>
+							</tr>
+						</thead>
+						<tbody>
+							{SERVER_TOP100_LIST}
+						</tbody>
+					</table>
+				</div>
+				<!-- ============== TOP PK SECTION =============== -->
+				<div class="tab-pane fade in table-responsive" id="pkRanking">
+					<table class="table">
+						<thead class="thead">
+							<tr>
+								<th style="width:5px;">#</th>
+								<th>Character Name</th>
+								<th>Guild Name</th>
+								<th>Level</th>
+								<th style="width:50px;">Kills</th>
+								<th style="width:50px;">Bounty</th>
+							</tr>
+						</thead>
+						<tbody>
+							{SERVER_TOPPK_LIST}
+						</tbody>
+					</table>
+				</div>
+				<!-- ============== TOP GUILDS SECTION =============== -->
+				<div class="tab-pane fade in  table-responsive" id="guildRanking">
+					<table class="table">
+						<thead class="thead">
+							<tr>
+								<th style="width:5px;">#</th>
+								<th>Guild Name</th>
+								<th>Leader</th>
+								<th>Level</th>
+								<th style="width:50px;">Wins</th>
+								<th style="width:50px;">Loses</th>
+								<th style="width:50px;">Points</th>
+							</tr>
+						</thead>
+						<tbody>
+							{SERVER_TOPGUILDS_LIST}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

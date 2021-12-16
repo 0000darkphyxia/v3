@@ -1,0 +1,106 @@
+header {
+	position: fixed;
+    z-index: 99999;
+	width: 100%;
+	min-width: 1000px;
+	background: url(../images/topbar_bg_main.png) repeat-x;
+	height: 45px;
+	font-family: fontC;
+}
+
+header .mini_soul {
+	display: inline-block;
+	background: url(../images/sprites_topbar.png) no-repeat -383px -1px;
+	margin: 0px 0px 0px 20px;
+	width: 35px;
+	height: 27px;
+}
+
+header .mini_game {
+	display: inline-block;
+	background: url(../images/sprites_topbar.png) no-repeat -385px -34px;
+	margin: 0px 0px 0px 5px;
+	width: 28px;
+	height: 27px;
+}
+
+header .alert_hud {
+	display: block;
+	background: url(../images/sprites_topbar.png) no-repeat -1px 0;
+	margin: -31px 0px 0px 175px;
+	width: 365px;
+	height: 27px;
+}
+header .alert_hud .showcase{
+	color: #fff;
+	width: 335px;
+	margin: 5px 0px 0px 27px;
+}
+
+header .alert_hud .showcase .alert_icon{
+	padding-left: 14px;
+	margin-right: 335px;
+	background: url(../images/alert_ico.png) no-repeat;
+	background-position: 0px 3px;
+}
+
+header .top_profile {
+	display: block;
+	float: right;
+	margin: -28px 50px 0px 0px;
+	width: 294px;
+	height: 107px;
+}
+
+header .top_profile .profile_hud{
+	position: relative;
+	display: block;
+	z-index: 2;
+	background: url(../images/sprites_topbar.png) no-repeat 0 -30px;
+	width: 294px;
+	height: 107px;
+}
+
+header .top_profile .profile_avt{
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+	width: 70px;
+	height: 70px;
+	margin: -101px 0px 0px 32px;
+}
+
+header .top_profile .profile_unm{
+	display: inline-block;
+	color: #ffffff;
+	width: 140px;
+	height: 20px;
+	margin: 31px 0px 0px 110px;
+}
+
+header .top_profile .profile_lvl{
+	display: inline-block;
+	color: #FFBE00;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	margin: 0px 0px 0px -166px;
+}
+
+header .top_profile .profile_rce{
+	display: block;
+	color: #FFBE00;
+	width: 140px;
+	height: 20px;
+	margin: 0px 0px 0px 108px;
+}
+
+header .top_profile .profile_lgo{
+	display: block;
+	color: #fff;
+	width: 70px;
+	height: 12px;
+	font-size: 11px;
+	text-align: right;
+	margin: 2px 0px 0px 180px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{SITE_TITLE} &bull; {SITE_DESCRIPTION}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/css/main.css" />
+		<!--[if lte IE 8]><script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/css/ie8.css" />
+		<![endif]-->
+		<!--[if lte IE 9]>
+		<link rel="stylesheet" href="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/css/ie9.css" />
+		<![endif]-->
+		<link rel="icon" href="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/img/favicon.ico" type="image/x-icon" />
+		<noscript>
+			<link rel="stylesheet" href="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/css/noscript.css" />
+		</noscript>
+		<style>
+			#video-background {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				z-index: -100;
+			}
+			.display_none
+			{
+				display: none;
+			}
+		</style>
+	</head>
+	<body class="is-loading-0 is-loading-1 is-loading-2">
+		<video autoplay loop id="video-background" muted plays-inline>
+			<source src="http://oxus-glps.innogamescdn.com/media/video/onyx/video-background-onyx-animated-landscape-mirrored.1501054999.mp4" type="video/mp4">
+		</video>
+		<div id="main">
+			<header id="header">
+				<br style="display: block; margin: 50px 0;">
+				<br style="display: block; margin: 50px 0;">
+				<br style="display: block; margin: 50px 0;">
+				<center>			
+					<!-- LOGIN FORM -->
+					<div class="login_form">
+						<h1 style="text-align:center">Login</h1>
+						<p style="text-align:center">{SITE_DESCRIPTION} to see the concents of <a href="{SITE_ROOT}">{SITE_TITLE}</a></p>
+						<div class="err" id="add_err"></div>
+						<input id="Username" type="text" name="Username" placeholder="Username">
+						<br>
+						<input id="Password" type="password" name="Password" placeholder="Password">
+						<br>
+						<button onclick="login()">Login</button> <button id="log_in">Signup</button>
+					</div>
+					<!-- SIGNUP FORM -->
+					<div class ="display_none">
+						<h1 style="text-align:center">Signup</h1>
+						<p style="text-align:center">Be one of the players of {SITE_TITLE}!</a></p>
+						<div class="err" id="add_err2"></div>
+						<input id="sUsername" type="text" name="Username" STYLE='color=#FFFF00' placeholder="Username" required>
+						<br>
+						<input id="sEmail" type="email" name="Email" placeholder="Email" required>
+						<br>
+						<input id="sPassword" type="password" name="Password" placeholder="Password" required>
+						<br>
+						<input id="sConfirmPassword" type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+						<br>
+						<input type="hidden" name="token" >
+						<button onclick="signup()">Signup</button> <button id="sign_up">Login</button>
+					</div>
+				</center>
+			</header>
+			<br style="display: block; margin: 50px 0;">
+			<br style="display: block; margin: 50px 0;">
+			<br style="display: block; margin: 50px 0;">
+			<br style="display: block; margin: 50px 0;">
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; {SITE_TITLE} 2017</li>
+				</ul>
+			</footer>
+		</div>
+		
+		<script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/jquery.min.js"></script>
+		<script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/skel.min.js"></script>
+		<script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/main.js"></script>
+		<script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/stacialogin.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<!--[if lte IE 8]><script src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/js/ie/respond.min.js"></script><![endif]-->
+	</body>
+	<audio style="display:none;" autoplay="true" src="{SITE_CMS_ROOT}gamefiles/BGMs/Brighton.mp3">
+</html>

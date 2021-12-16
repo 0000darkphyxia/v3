@@ -1,0 +1,49 @@
+<div class="row">
+	<!-- ============== HEADER =============== -->
+	<header id="home">
+		<!-- Main nav -->
+		<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+			<div class="container">
+				<div class="navbar navbar-header">
+					<a class="navbar-brand navbar-logo" href="#home"></a>
+					<div class="btn-group">
+						<button type="button" class="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="ion-search"></span>
+						</button>
+						<div class="dropdown-menu dropdown-search-box animated fadeIn">
+							<span class="ion-android-arrow-dropup searchbox-caret animated fadeIn"></span>
+							<form method="get" action="{SITE_CMS_ROOT}">
+								<input type="text" placeholder="Search Character" name="profile" class="search-box" required>
+							</form>
+						</div>
+					</div>
+					<button type="button" class="navbar-toggle custom-toggle-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+					<span class="sr-only">
+						Toggle navigation
+					</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				{SITE_TEMPLATE_NAVIGATION}
+			</div>
+		</nav>
+		<center>
+			<div class="fadeinstacia">
+				<embed 
+					id="gameSWF" 
+					src="{SITE_CMS_ROOT}styles/{SITE_CMS_STYLE}/swf/SplashScreen.swf" width="860px" height="420px" loop="false" 
+					pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" 
+					type="application/x-shockwave-flash" 
+					scale="exactfit" 
+					allowscriptaccess="always" 
+					allowFullScreen="true" 
+					menu="false" 
+					wmode="transparent"
+					flashvars="&sLang=en">
+				</embed>
+			</div>
+		</center>
+	</header>
+</div>

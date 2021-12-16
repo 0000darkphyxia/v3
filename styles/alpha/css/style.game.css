@@ -1,0 +1,67 @@
+body {
+    font-size: 14px;
+	min-width: 1000px;
+    line-height: 1.42857143;
+    background: #000 url(../images/game_background.jpg) no-repeat center top;
+    color: #fff;	
+}
+
+nav {
+	position: relative;
+	display: block;
+	z-index: 3;
+	top: 20px;
+	margin: 0 auto;
+	background: url(../images/sprites_main_hud.png) no-repeat -10px -4px;
+	width: 1021px;
+	height: 162px;
+}
+
+nav .div_tag_1 {
+	top: -87px;
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 20px;
+	color: #fff;
+	font-size: 18px;
+	font-family: fontB;
+	text-align: left;
+	margin: -50px 0px 0px 45px;
+}
+
+nav .div_tag_2 {
+	top: -87px;
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 20px;
+	color: #fff;
+	font-size: 18px;
+	font-family: fontB;
+	text-align: right;
+	margin: 12px 0px 0px -20px;
+}
+
+main {
+	position: relative;
+	display: block;
+	z-index: 1;
+	top: 28px;
+	margin: 0 auto;
+	margin-top: 45px;
+    padding: 42px 0px 0px 29px;
+	background: url(../images/play_background.png) no-repeat;
+	width: 1320px;
+	min-height:614px;
+}
+
+main .swf_position {
+	position: relative;
+	top: -10px;
+}
+
+main .swf_position_off {
+	position: relative;
+	top: -9px;
+}
